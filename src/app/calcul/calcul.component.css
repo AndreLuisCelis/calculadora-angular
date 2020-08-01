@@ -1,0 +1,38 @@
+button{
+width: 100%;
+height: 50px;
+border-radius: 10px;
+background-color: peachpuff;
+font-weight: bolder;
+font-size: 20px;
+}
+.calculadora{
+  max-width: 400px;
+  min-width: 315px;
+  border: solid 2px ;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 70px;
+  background-color:salmon;
+  box-shadow: 1px -1px 50px mediumseagreen;
+}
+.visor{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  height: 90px;
+  border: solid 2px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: right;
+}
+.btn-igual{
+  height: 100%;
+  background-color:indianred;
+  color: antiquewhite;
+}
+.btn-ac{
+  background-color: mediumvioletred;
+  color: antiquewhite;
+}

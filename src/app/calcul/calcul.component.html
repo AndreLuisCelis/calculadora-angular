@@ -1,0 +1,82 @@
+
+<div class="container calculadora">
+
+  <div class="row mb-4">
+    <div class="col-12">
+      <input type="text" disabled = 'disabled' [value]= 'numeroAtual'class = 'visor' scrooling = 'no'>
+    </div>
+  </div>
+
+  <div class="row btn-de-cima mt-2">
+    <div class="col-3">
+      <button value = '+' (click)= 'getOperation("+")'>+</button>
+    </div>
+    <div class="col-3">
+      <button value = '-' (click)= 'getOperation("-")'>-</button>
+    </div>
+    <div class="col-3">
+      <button value = '/' (click)= 'getOperation("/")'>&divide;</button>
+    </div>
+    <div class="col-3">
+      <button value = '*' (click)= 'getOperation("*")'>&times;</button>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-9">
+
+      <div class="row my-4">
+        <div class="col-4">
+          <button value = '1' (click)= 'getNumber("1")'>1</button>
+        </div>
+        <div class="col-4">
+          <button value = '2' (click)= 'getNumber("2")'>2</button>
+        </div>
+        <div class="col-4">
+          <button value = '3' (click)= 'getNumber("3")'>3</button>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-4">
+          <button value ='4' (click)= 'getNumber("4")'>4</button>
+        </div>
+        <div class="col-4">
+          <button value = '5' (click)= 'getNumber("5")'>5</button>
+        </div>
+        <div class="col-4" >
+          <button value ='6' (click)= 'getNumber("6")'>6</button>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-4">
+          <button value ='7' (click)= 'getNumber("7")'>7</button>
+        </div>
+        <div class="col-4">
+          <button value = '8' (click)= 'getNumber("8")'>8</button>
+        </div>
+        <div class="col-4">
+          <button value = '9' (click)= 'getNumber("9")'>9</button>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-4">
+          <button value = '0' (click)= 'getNumber("0")'>0</button>
+        </div>
+        <div class="col-4">
+          <button value = 'decimal' (click)= 'getDecimal()'>.</button>
+        </div>
+        <div class="col-4">
+          <button class = 'btn-ac' value = 'limpar' (click)= 'clear()'>AC</button>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-3 my-4">
+          <button class = 'btn-igual' (click)= 'getOperation("=")'> = </button>
+    </div>
+  </div>
+</div>
